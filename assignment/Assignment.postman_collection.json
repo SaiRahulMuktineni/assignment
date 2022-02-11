@@ -1,0 +1,1032 @@
+{
+	"info": {
+		"_postman_id": "92d79a32-742f-4acb-a168-1215e5d453bc",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Topic 6",
+			"item": [
+				{
+					"name": "Assignment 1",
+					"item": [
+						{
+							"name": "Get Movies (text/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/movies",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Movies (application/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/movies",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Movies (application/json)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/movies",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Movie by MovieId",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/movies/M01",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movies",
+										"M01"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Assignment 2",
+					"item": [
+						{
+							"name": "Get Students (text/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/students",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students (application/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/students",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students (application/json)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/students",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Student by StudentId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/S01",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"S01"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by StudentMarks",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentMarks/90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentMarks",
+										"90"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Student",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"studentId\" : \"S11\",\r\n    \"studentName\" : \"Serena William\",\r\n    \"studentClass\" : \"D1\",\r\n    \"studentTotalMarks\" : 99.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/students",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Student",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"studentId\" : \"S11\",\r\n    \"studentName\" : \"Rebeca Tavares\",\r\n    \"studentClass\" : \"D1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/students/S11",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"S11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Student by StudentId",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/S11",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"S11"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Assignment 3",
+					"item": [
+						{
+							"name": "Get Students by ClassName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentClasses/C1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentClasses",
+										"C1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by StudentMarks as Query Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentMarks/queryParams?studentMarks=90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentMarks",
+										"queryParams"
+									],
+									"query": [
+										{
+											"key": "studentMarks",
+											"value": "90"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by StudentMarks as Matrix Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentMarks/matrixParams;studentMarks=90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentMarks",
+										"matrixParams;studentMarks=90"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by StudentMarks as Multiple Params",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentMarks/multipleParams/90;studentMarksAsMatrixParam=90?studentMarksAsQueryParam=90",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentMarks",
+										"multipleParams",
+										"90;studentMarksAsMatrixParam=90"
+									],
+									"query": [
+										{
+											"key": "studentMarksAsQueryParam",
+											"value": "90"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by ClassName as Query Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentClasses/queryParams?className=C1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentClasses",
+										"queryParams"
+									],
+									"query": [
+										{
+											"key": "className",
+											"value": "C1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by ClassName as Matrix Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentClasses/matrixParams;className=C1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentClasses",
+										"matrixParams;className=C1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Students by ClassName as Multiple Params",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentClasses/multipleParams/C1;classNameAsMatrixParam=C1?classNameAsQueryParam=C1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentClasses",
+										"multipleParams",
+										"C1;classNameAsMatrixParam=C1"
+									],
+									"query": [
+										{
+											"key": "classNameAsQueryParam",
+											"value": "C1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Student by StudentId as Query Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentIds/queryParams?studentId=S03",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentIds",
+										"queryParams"
+									],
+									"query": [
+										{
+											"key": "studentId",
+											"value": "S03"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Student by StudentId as Matrix Param",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentIds/matrixParams;studentId=S03",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentIds",
+										"matrixParams;studentId=S03"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Student by StudentId as Multiple Params",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/students/studentIds/multipleParams/S03;studentIdAsMatrixParam=S03?studentIdAsQueryParam=S03",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"studentIds",
+										"multipleParams",
+										"S03;studentIdAsMatrixParam=S03"
+									],
+									"query": [
+										{
+											"key": "studentIdAsQueryParam",
+											"value": "S03"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Assignment 4",
+					"item": [
+						{
+							"name": "Credit Card Validation - Positive",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cardNumber\" : \"1234567891123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/creditcard/validate",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"creditcard",
+										"validate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Credit Card Validation - Negative",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cardNumber\" : \"1234567899123455\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/creditcard/validate",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"creditcard",
+										"validate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Topic 7 & 8",
+			"item": [
+				{
+					"name": "Assignment 1",
+					"item": [
+						{
+							"name": "Get Employees (text/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees (application/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees (application/json)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<Employee>\r\n    <empId>EM009</empId>\r\n    <empFirstName>Robert</empFirstName>\r\n    <empLastName>Rock</empLastName>\r\n    <empLocation>Chicago</empLocation>\r\n    <empBand>A1</empBand>\r\n</Employee>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/employees",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Employee",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<Employee>\r\n    <empId>EM009</empId>\r\n    <empFirstName>Steve</empFirstName>\r\n    <empLastName>McMan</empLastName>\r\n    <empLocation>Chicago</empLocation>\r\n    <empBand>A3</empBand>\r\n</Employee>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/employees/EM009",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"EM009"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employee by EmpId",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/EM003",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"EM003"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee by EmpId",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/employees/EM001",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"EM001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpLocation (text/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empLocations/Ottawa",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empLocations",
+										"Ottawa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpLocation (application/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empLocations/Ottawa",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empLocations",
+										"Ottawa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpLocation (application/json)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empLocations/Ottawa",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empLocations",
+										"Ottawa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpBand (text/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empBands/B3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empBands",
+										"B3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpBand (application/xml)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empBands/B3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empBands",
+										"B3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employees by EmpBand (application/json)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/employees/empBands/B3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employees",
+										"empBands",
+										"B3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
